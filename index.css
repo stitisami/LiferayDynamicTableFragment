@@ -1,0 +1,30 @@
+
+.dynamic-table .table thead th:first-child {
+				border-radius: 20px 0px 0px 0px;
+	}
+.dynamic-table .table thead th:first-child:lang(ar) {
+				border-radius: 0px 20px 0px 0px;
+	}
+.dynamic-table .table thead th:last-child { 
+				border-radius: 0px 20px 0px 0px;
+}
+.dynamic-table .table thead th:last-child:lang(ar) { 
+				border-radius: 20px 0px 0px 0px;
+}
+.dynamic-table .table td:lang(ar) { 
+				direction: ltr;
+}
+.dynamic-table .table thead ,.dynamic-table .table th {
+    background-color: #E00800;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Montserrat-Medium';
+
+}
+.dynamic-table .table tbody tr td {
+
+	text-align: center;
+	font-size: 24px;
+	font-family: 'Montserrat-Medium';
+}
