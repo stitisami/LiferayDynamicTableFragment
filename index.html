@@ -1,0 +1,20 @@
+<div class="table-responsive dynamic-table">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        [#list 0..configuration.numberOfCols-1 as y]
+          <th data-lfr-editable-id="title-header${y+1}" data-lfr-editable-type="text" data-lfr-priority="${y+1}"><span>title header</span></th>
+        [/#list]
+      </tr>
+    </thead>
+    <tbody>
+      [#list 0..configuration.numberOfRows-1 as i]
+        <tr>
+          [#list 0..configuration.numberOfCols-1 as j]
+            <td data-lfr-editable-id="title${i+1}-${j+1}" data-lfr-editable-type="text" data-lfr-priority="${i+1}-${j+1}"><span>content</span> </td>
+          [/#list]
+        </tr>
+      [/#list]
+    </tbody>
+  </table>
+</div>
